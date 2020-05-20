@@ -99,4 +99,95 @@ li {
       background-size: contain;
     }
   }
+
+  &__bet {
+    background: url(../img/bet-bg.png) no-repeat;
+    background-size: contain;
+    display: flex;
+    min-width: 15.45%;
+    max-width: 15.45%;
+    max-height: 52%;
+    margin-top: 2.5%;
+    margin-left: 0.5%;
+
+    &-labels {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    &-minus {
+      background: url(../img/bet-btn-normal-bg.png) no-repeat;
+      background-size: contain;
+      width: 22.5%;
+      height: 81%;
+      margin-top: 2.5%;
+      margin-left: 3%;
+
+      &-icon {
+        background: url(../img/minus-icon-normal.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 48%;
+        height: 48%;
+        margin: 0 auto;
+      }
+    }
+
+    &-plus {
+      background: url(../img/bet-btn-normal-bg.png) no-repeat;
+      background-size: contain;
+      width: 22.5%;
+      height: 81%;
+      margin-top: 2.5%;
+        margin-right: 3%;
+
+      &-icon {
+        background: url(../img/plus-icon-normal.png) no-repeat;
+        background-size: contain;
+        width: 48%;
+        height: 48%;
+        margin: 0 auto;
+      }
+    }
+
+    &-plus:hover, &-minus:hover {
+      background: url(../img/bet-btn-hover-bg.png) no-repeat;
+      background-size: contain;
+    }
+
+    &-plus:active, &-minus:active {
+      background: url(../img/bet-btn-click-bg.png) no-repeat;
+      background-size: contain;
+    }
+
+    &-plus:disabled, &-minus:disabled {
+      background: url(../img/bet-btn-disable-bg.png) no-repeat;
+      background-size: contain;
+    }
+
+    &-plus:disabled .bottom-bar__bet-plus-icon {
+      background: url(../img/plus-icon-disable.png) no-repeat;
+      background-size: contain;
+    }
+
+    &-minus:disabled .bottom-bar__bet-minus-icon {
+      background: url(../img/minus-icon-disable.png) no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.bottom-bar__bet-head {
+  color: #ff6972;
+  text-shadow: 0px 1px 0px #4e0005;
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (18 - 3) + 3px);
+}
+
+.bottom-bar__bet-count {
+  color: #ffd100;
+  text-shadow: 0px 1px 0px #710008;
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (22 - 4) + 4px);
 }
