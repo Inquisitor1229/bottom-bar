@@ -130,13 +130,25 @@ li {
     .bottom-bar__bet-minus:disabled .bottom-bar__bet-minus-icon {
       background: url(../img/minus-icon-disable.png) no-repeat;
       background-size: contain; }
+  .bottom-bar__coin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/coin-bg.png) no-repeat;
+    background-size: contain;
+    min-width: 8%;
+    max-width: 8%;
+    max-height: 49%;
+    margin-top: 2.5%;
+    margin-left: 0.5%; }
 
-.bottom-bar__bet-head {
+.bottom-bar__bet-head, .bottom-bar__coin-head {
   color: #ff6972;
   text-shadow: 0px 1px 0px #4e0005;
   font-size: calc( (100vw - 320px)/(1920 - 320) * (18 - 3) + 3px); }
 
-.bottom-bar__bet-count {
+.bottom-bar__bet-count, .bottom-bar__coin-count {
   color: #ffd100;
   text-shadow: 0px 1px 0px #710008;
   font-size: calc( (100vw - 320px)/(1920 - 320) * (22 - 4) + 4px); }
