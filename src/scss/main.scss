@@ -276,6 +276,66 @@ li {
       }
     }
   }
+
+  &__auto {
+    position: relative;
+    max-width: 15.44%;
+    min-width: 15.44%;
+    max-height: 52%;
+    margin-top: 2.3%;
+    margin-left: 0.5%;
+
+    &:hover &-menu{
+      transform: translateY(-22.5%);
+    }
+
+    &-btn {
+      background: url(../img/auto-normal-bg.png) no-repeat;
+      background-size: contain;
+      
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      p {
+        font-size: calc( (100vw - 320px)/(1920 - 320) * (26 - 5) + 5px);
+        color: #3d0000;
+        text-shadow: 0px 1px 0px #710008;
+        margin-left: -35%;
+      }
+    }
+
+    &-menu-container {
+      width: 100%;
+      height: 400%;
+      position: absolute;
+      bottom: 50%;
+      overflow: hidden;
+    }
+
+    &-menu {
+      background: url(../img/auto-menu-bg.png) no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 350%;
+      position: absolute;
+      left: 0px;
+      bottom: -350%;
+      transition: all 1.5s ease-in-out;
+      padding: 7%;
+
+      li {
+        color: #ffd100;
+        text-shadow: 0px 1px 0px #ffc600;
+        font-size: calc( (100vw - 320px)/(1920 - 320) * (20 - 3) + 3px);
+        padding-bottom: 4%;
+      }
+
+      li:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
 }
 
 .bottom-bar__bet-head, .bottom-bar__coin-head {
@@ -288,4 +348,24 @@ li {
   color: #ffd100;
   text-shadow: 0px 1px 0px #710008;
   font-size: calc( (100vw - 320px)/(1920 - 320) * (22 - 4) + 4px);
+}
+
+.special-item {
+  display: flex;
+}
+
+.icon-container {
+  min-width: 10%;
+  max-width: 10%;
+  min-height: 10%;
+  max-height: 10%;
+  padding-right: 2%;
+}
+
+.icon-feature {
+  background: url(../img/icon-feature.png) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  margin-top: 20%;
 }
