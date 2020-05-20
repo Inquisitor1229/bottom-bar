@@ -11,7 +11,53 @@
   </head>
   <body>
     <main>
-      <div class="main-container"></div>
+      <div class="main-container">
+        <section class="top"></section>
+        <section class="bottom-bar">
+          <div class="bottom-bar-container">
+            <button class="bottom-bar__info" onclick="">
+              <div class="bottom-bar__info-icon"></div>
+            </button>
+            <div class="bottom-bar__bet">
+              <button class="bottom-bar__bet-minus" onclick="">
+                <div class="bottom-bar__bet-minus-icon"></div>
+              </button>
+              <div class="bottom-bar__bet-labels"><span class="bottom-bar__bet-head">TOTAL BET</span><span class="bottom-bar__bet-count">¥8808.10</span></div>
+              <button class="bottom-bar__bet-plus" onclick="" disabled>
+                <div class="bottom-bar__bet-plus-icon"></div>
+              </button>
+            </div>
+            <div class="bottom-bar__coin"><span class="bottom-bar__coin-head">COIN</span><span class="bottom-bar__coin-count">¥5689</span></div>
+            <div class="bottom-bar__win"><span class="bottom-bar__win-label">GOOD LUCK!</span></div>
+            <div class="bottom-bar__turbo">
+              <input class="bottom-bar__turbo-cb" onclick="" type="checkbox" id="switch-turbo">
+              <label class="bottom-bar__turbo-btn" for="switch-turbo"></label>
+            </div>
+            <div class="bottom-bar__auto">
+              <div class="bottom-bar__auto-menu-container">
+                <ul class="bottom-bar__auto-menu">
+                  <li class="special-item">
+                    <div class="icon-container">
+                      <div class="icon-feature"></div>
+                    </div><span>UNTIL FEATURE</span>
+                  </li>
+                  <li> <span>25 SPINS</span></li>
+                  <li> <span>20 SPINS</span></li>
+                  <li> <span>15 SPINS</span></li>
+                  <li> <span>10 SPINS</span></li>
+                  <li> <span>5 SPINS</span></li>
+                </ul>
+              </div>
+              <button class="bottom-bar__auto-btn" onclick="">
+                <p>AUTO</p>
+              </button>
+            </div>
+            <button class="bottom-bar__start" onclick="">
+              <div class="bottom-bar__start-icon"></div>
+            </button>
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>
