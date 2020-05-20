@@ -9,5 +9,49 @@ html(lang="eng")
         link(href="css/main.css" rel="stylesheet")
         script(src="script/main.js")
     body
+        audio#btn-click-audio
+            source(src="media/Button_Click.wav" type="audio/wav")
         main
             .main-container
+                section.top
+                section.bottom-bar
+                    .bottom-bar-container
+                        button(onclick="click_audio()").bottom-bar__info.btn-click
+                            .bottom-bar__info-icon
+                        .bottom-bar__bet
+                            button(onclick="click_audio()").bottom-bar__bet-minus.btn-click
+                                .bottom-bar__bet-minus-icon
+                            .bottom-bar__bet-labels
+                                span.bottom-bar__bet-head TOTAL BET
+                                span.bottom-bar__bet-count ¥8808.10
+                            button(onclick="click_audio()" disabled).bottom-bar__bet-plus.btn-click
+                                .bottom-bar__bet-plus-icon
+                        .bottom-bar__coin
+                            span.bottom-bar__coin-head COIN
+                            span.bottom-bar__coin-count ¥5689
+                        .bottom-bar__win
+                            span.bottom-bar__win-label GOOD LUCK!
+                        .bottom-bar__turbo
+                            input(onclick="click_audio()" type="checkbox").bottom-bar__turbo-cb#switch-turbo
+                            label(for="switch-turbo").bottom-bar__turbo-btn
+                        .bottom-bar__auto
+                            .bottom-bar__auto-menu-container
+                                ul.bottom-bar__auto-menu
+                                    li.special-item
+                                        .icon-container
+                                            .icon-feature
+                                        span UNTIL FEATURE
+                                    li 
+                                        span 25 SPINS
+                                    li 
+                                        span 20 SPINS
+                                    li 
+                                        span 15 SPINS
+                                    li 
+                                        span 10 SPINS
+                                    li 
+                                        span 5 SPINS
+                            button(onclick="click_audio()").bottom-bar__auto-btn.btn-click 
+                                p AUTO
+                        button(onclick="click_audio()").bottom-bar__start.btn-click
+                            .bottom-bar__start-icon

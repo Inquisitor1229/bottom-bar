@@ -22,11 +22,294 @@ img {
   max-width: 100%;
   max-height: 100%; }
 
+button, input {
+  padding: 0;
+  border: 0px;
+  cursor: pointer; }
+  button:active, button:focus, input:active, input:focus {
+    outline: none; }
+
 li {
   list-style: none; }
 
 .main {
   margin: 0 auto;
   max-width: 1920px; }
+
+.top {
+  height: 70vh; }
+
+.bottom-bar {
+  padding: 0 5%; }
+  .bottom-bar-container {
+    display: flex;
+    background: url(../img/bottom-bar-body.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 7.5vw; }
+  .bottom-bar__info {
+    background: url(../img/info-normal-bg.png) no-repeat;
+    background-size: contain;
+    min-width: 4.34%;
+    max-width: 4.34%;
+    max-height: 52%;
+    margin-left: 5.3%;
+    margin-top: 2.5%; }
+    .bottom-bar__info-icon {
+      background: url(../img/info-normal-icon.png) no-repeat;
+      background-size: contain;
+      margin: 0 auto;
+      height: 58%;
+      max-width: 20%; }
+    .bottom-bar__info:hover {
+      background: url(../img/info-hover-bg.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__info:active {
+      background: url(../img/info-click-bg.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__info:disabled {
+      background: url(../img/info-disable-bg.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__info:disabled .bottom-bar__info-icon {
+      background: url(../img/info-disable-icon.png) no-repeat;
+      background-size: contain; }
+  .bottom-bar__bet {
+    background: url(../img/bet-bg.png) no-repeat;
+    background-size: contain;
+    display: flex;
+    min-width: 15.45%;
+    max-width: 15.45%;
+    max-height: 52%;
+    margin-top: 2.5%;
+    margin-left: 0.5%; }
+    .bottom-bar__bet-labels {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto; }
+    .bottom-bar__bet-minus {
+      background: url(../img/bet-btn-normal-bg.png) no-repeat;
+      background-size: contain;
+      width: 22.5%;
+      height: 81%;
+      margin-top: 2.5%;
+      margin-left: 3%; }
+      .bottom-bar__bet-minus-icon {
+        background: url(../img/minus-icon-normal.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 48%;
+        height: 48%;
+        margin: 0 auto; }
+    .bottom-bar__bet-plus {
+      background: url(../img/bet-btn-normal-bg.png) no-repeat;
+      background-size: contain;
+      width: 22.5%;
+      height: 81%;
+      margin-top: 2.5%;
+      margin-right: 3%; }
+      .bottom-bar__bet-plus-icon {
+        background: url(../img/plus-icon-normal.png) no-repeat;
+        background-size: contain;
+        width: 48%;
+        height: 48%;
+        margin: 0 auto; }
+    .bottom-bar__bet-plus:hover, .bottom-bar__bet-minus:hover {
+      background: url(../img/bet-btn-hover-bg.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__bet-plus:active, .bottom-bar__bet-minus:active {
+      background: url(../img/bet-btn-click-bg.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__bet-plus:disabled, .bottom-bar__bet-minus:disabled {
+      background: url(../img/bet-btn-disable-bg.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__bet-plus:disabled .bottom-bar__bet-plus-icon {
+      background: url(../img/plus-icon-disable.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__bet-minus:disabled .bottom-bar__bet-minus-icon {
+      background: url(../img/minus-icon-disable.png) no-repeat;
+      background-size: contain; }
+  .bottom-bar__coin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/coin-bg.png) no-repeat;
+    background-size: contain;
+    min-width: 8%;
+    max-width: 8%;
+    max-height: 49%;
+    margin-top: 2.5%;
+    margin-left: 0.5%; }
+  .bottom-bar__win {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/win-bg.png) no-repeat;
+    background-size: contain;
+    max-width: 33.1%;
+    min-width: 33.1%;
+    max-height: 86.5%;
+    margin-top: 1%;
+    margin-left: -0.4%; }
+    .bottom-bar__win-label {
+      color: #ffe400;
+      font-size: calc( (100vw - 320px)/(1920 - 320) * (62 - 10) + 10px);
+      text-shadow: 0px 2px 0px #710008; }
+  .bottom-bar__turbo {
+    max-width: 6.5%;
+    min-width: 6.5%;
+    max-height: 49%;
+    margin-top: 2.5%;
+    margin-left: -0.5%; }
+    .bottom-bar__turbo-cb {
+      display: none; }
+      .bottom-bar__turbo-cb:checked + label {
+        background: url(../img/turbo-on-bg.png) no-repeat;
+        background-size: contain; }
+      .bottom-bar__turbo-cb:checked + .bottom-bar__turbo-btn:before {
+        top: 97%;
+        transform: translateY(-100%); }
+      .bottom-bar__turbo-cb:disabled + .bottom-bar__turbo-btn:before {
+        background: url(../img/turbo-btn-disable.png) no-repeat;
+        background-size: contain; }
+    .bottom-bar__turbo-btn {
+      position: relative;
+      background: url(../img/turbo-off-bg.png) no-repeat;
+      background-size: contain;
+      display: block;
+      z-index: 9999;
+      width: 100%;
+      height: 100%;
+      transition: 0.1s; }
+      .bottom-bar__turbo-btn:before {
+        content: 'TURBO';
+        text-align: center;
+        font-size: calc( (100vw - 320px)/(1920 - 320) * (24 - 4) + 4px);
+        padding-top: 2%;
+        color: #3d0000;
+        text-shadow: 0px 1px 0px #ffc600;
+        position: absolute;
+        background: url(../img/turbo-btn-normal.png) no-repeat;
+        background-size: contain;
+        top: 12%;
+        left: 3%;
+        width: 92%;
+        height: 57%;
+        transition: 0.1s; }
+      .bottom-bar__turbo-btn:hover:before {
+        background: url(../img/turbo-btn-hover.png) no-repeat;
+        background-size: contain; }
+      .bottom-bar__turbo-btn:active:before {
+        background: url(../img/turbo-btn-click.png) no-repeat;
+        background-size: contain; }
+  .bottom-bar__auto {
+    position: relative;
+    max-width: 15.44%;
+    min-width: 15.44%;
+    max-height: 52%;
+    margin-top: 2.3%;
+    margin-left: 0.5%; }
+    .bottom-bar__auto:hover .bottom-bar__auto-menu {
+      transform: translateY(-22.5%); }
+    .bottom-bar__auto-btn {
+      background: url(../img/auto-normal-bg.png) no-repeat;
+      background-size: contain;
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+      .bottom-bar__auto-btn p {
+        font-size: calc( (100vw - 320px)/(1920 - 320) * (26 - 5) + 5px);
+        color: #3d0000;
+        text-shadow: 0px 1px 0px #710008;
+        margin-left: -35%; }
+    .bottom-bar__auto-menu-container {
+      width: 100%;
+      height: 400%;
+      position: absolute;
+      bottom: 50%;
+      overflow: hidden; }
+    .bottom-bar__auto-menu {
+      background: url(../img/auto-menu-bg.png) no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 350%;
+      position: absolute;
+      left: 0px;
+      bottom: -350%;
+      transition: all 1.5s ease-in-out;
+      padding: 7%; }
+      .bottom-bar__auto-menu li {
+        color: #ffd100;
+        text-shadow: 0px 1px 0px #ffc600;
+        font-size: calc( (100vw - 320px)/(1920 - 320) * (20 - 3) + 3px);
+        padding-bottom: 4%; }
+      .bottom-bar__auto-menu li:last-child {
+        padding-bottom: 0; }
+  .bottom-bar__start {
+    background: url(../img/start-normal-bg.png) no-repeat;
+    background-size: contain;
+    max-width: 13.61%;
+    min-width: 13.61%;
+    height: 161.5%;
+    margin-left: -7%;
+    margin-top: -2%;
+    z-index: 1; }
+    .bottom-bar__start-icon {
+      background: url(../img/start-icon-normal.png) no-repeat;
+      background-size: contain;
+      height: 50%;
+      max-width: 60%;
+      margin: 0 auto;
+      animation: anime360 ease-out 5s infinite; }
+    .bottom-bar__start:hover {
+      background: url(../img/start-hover-bg.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__start:active {
+      background: url(../img/start-click-bg.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__start:disabled {
+      background: url(../img/start-disable-bg.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__start:disabled .bottom-bar__start-icon {
+      background: url(../img/start-icon-disable.png) no-repeat;
+      background-size: contain;
+      animation: none; }
+
+@keyframes anime360 {
+  0% {
+    transform: rotate(0); }
+  20% {
+    transform: rotate(-360deg); }
+  100% {
+    transform: rotate(-360deg); } }
+
+.bottom-bar__bet-head, .bottom-bar__coin-head {
+  color: #ff6972;
+  text-shadow: 0px 1px 0px #4e0005;
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (18 - 3) + 3px); }
+
+.bottom-bar__bet-count, .bottom-bar__coin-count {
+  color: #ffd100;
+  text-shadow: 0px 1px 0px #710008;
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (22 - 4) + 4px); }
+
+.special-item {
+  display: flex; }
+
+.icon-container {
+  min-width: 10%;
+  max-width: 10%;
+  min-height: 10%;
+  max-height: 10%;
+  padding-right: 2%; }
+
+.icon-feature {
+  background: url(../img/icon-feature.png) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  margin-top: 20%; }
 
 /*# sourceMappingURL=main.css.map */
