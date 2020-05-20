@@ -247,6 +247,43 @@ li {
         padding-bottom: 4%; }
       .bottom-bar__auto-menu li:last-child {
         padding-bottom: 0; }
+  .bottom-bar__start {
+    background: url(../img/start-normal-bg.png) no-repeat;
+    background-size: contain;
+    max-width: 13.61%;
+    min-width: 13.61%;
+    height: 161.5%;
+    margin-left: -7%;
+    margin-top: -2%;
+    z-index: 1; }
+    .bottom-bar__start-icon {
+      background: url(../img/start-icon-normal.png) no-repeat;
+      background-size: contain;
+      height: 50%;
+      max-width: 60%;
+      margin: 0 auto;
+      animation: anime360 ease-out 5s infinite; }
+    .bottom-bar__start:hover {
+      background: url(../img/start-hover-bg.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__start:active {
+      background: url(../img/start-click-bg.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__start:disabled {
+      background: url(../img/start-disable-bg.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__start:disabled .bottom-bar__start-icon {
+      background: url(../img/start-icon-disable.png) no-repeat;
+      background-size: contain;
+      animation: none; }
+
+@keyframes anime360 {
+  0% {
+    transform: rotate(0); }
+  20% {
+    transform: rotate(-360deg); }
+  100% {
+    transform: rotate(-360deg); } }
 
 .bottom-bar__bet-head, .bottom-bar__coin-head {
   color: #ff6972;
