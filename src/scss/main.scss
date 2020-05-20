@@ -27,6 +27,16 @@ img {
   max-height: 100%;
 }
 
+button, input {
+  padding: 0;
+  border: 0px;
+  cursor: pointer;
+
+  &:active, &:focus {
+    outline: none;
+  }
+}
+
 li {
   list-style: none;
 }
@@ -34,4 +44,13 @@ li {
 .main {
   margin: 0 auto;
   max-width: 1920px;
+}
+
+.top {
+  height: 70vh;
+}
+
+.bottom-bar
+{
+  padding: 0 5%;
 }
