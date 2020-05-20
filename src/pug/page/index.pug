@@ -9,20 +9,22 @@ html(lang="eng")
         link(href="css/main.css" rel="stylesheet")
         script(src="script/main.js")
     body
+        audio#btn-click-audio
+            source(src="media/Button_Click.wav" type="audio/wav")
         main
             .main-container
                 section.top
                 section.bottom-bar
                     .bottom-bar-container
-                        button(onclick="").bottom-bar__info
+                        button(onclick="click_audio()").bottom-bar__info.btn-click
                             .bottom-bar__info-icon
                         .bottom-bar__bet
-                            button(onclick="").bottom-bar__bet-minus
+                            button(onclick="click_audio()").bottom-bar__bet-minus.btn-click
                                 .bottom-bar__bet-minus-icon
                             .bottom-bar__bet-labels
                                 span.bottom-bar__bet-head TOTAL BET
                                 span.bottom-bar__bet-count ¥8808.10
-                            button(onclick="" disabled).bottom-bar__bet-plus
+                            button(onclick="click_audio()" disabled).bottom-bar__bet-plus.btn-click
                                 .bottom-bar__bet-plus-icon
                         .bottom-bar__coin
                             span.bottom-bar__coin-head COIN
@@ -30,7 +32,7 @@ html(lang="eng")
                         .bottom-bar__win
                             span.bottom-bar__win-label GOOD LUCK!
                         .bottom-bar__turbo
-                            input(onclick="" type="checkbox").bottom-bar__turbo-cb#switch-turbo
+                            input(onclick="click_audio()" type="checkbox").bottom-bar__turbo-cb#switch-turbo
                             label(for="switch-turbo").bottom-bar__turbo-btn
                         .bottom-bar__auto
                             .bottom-bar__auto-menu-container
@@ -49,7 +51,7 @@ html(lang="eng")
                                         span 10 SPINS
                                     li 
                                         span 5 SPINS
-                            button(onclick="").bottom-bar__auto-btn
+                            button(onclick="click_audio()").bottom-bar__auto-btn.btn-click 
                                 p AUTO
-                        button(onclick="").bottom-bar__start
+                        button(onclick="click_audio()").bottom-bar__start.btn-click
                             .bottom-bar__start-icon

@@ -10,27 +10,30 @@
     <script src="script/main.js"></script>
   </head>
   <body>
+    <audio id="btn-click-audio">
+      <source src="media/Button_Click.wav" type="audio/wav">
+    </audio>
     <main>
       <div class="main-container">
         <section class="top"></section>
         <section class="bottom-bar">
           <div class="bottom-bar-container">
-            <button class="bottom-bar__info" onclick="">
+            <button class="bottom-bar__info btn-click" onclick="click_audio()">
               <div class="bottom-bar__info-icon"></div>
             </button>
             <div class="bottom-bar__bet">
-              <button class="bottom-bar__bet-minus" onclick="">
+              <button class="bottom-bar__bet-minus btn-click" onclick="click_audio()">
                 <div class="bottom-bar__bet-minus-icon"></div>
               </button>
               <div class="bottom-bar__bet-labels"><span class="bottom-bar__bet-head">TOTAL BET</span><span class="bottom-bar__bet-count">¥8808.10</span></div>
-              <button class="bottom-bar__bet-plus" onclick="" disabled>
+              <button class="bottom-bar__bet-plus btn-click" onclick="click_audio()" disabled>
                 <div class="bottom-bar__bet-plus-icon"></div>
               </button>
             </div>
             <div class="bottom-bar__coin"><span class="bottom-bar__coin-head">COIN</span><span class="bottom-bar__coin-count">¥5689</span></div>
             <div class="bottom-bar__win"><span class="bottom-bar__win-label">GOOD LUCK!</span></div>
             <div class="bottom-bar__turbo">
-              <input class="bottom-bar__turbo-cb" onclick="" type="checkbox" id="switch-turbo">
+              <input class="bottom-bar__turbo-cb" onclick="click_audio()" type="checkbox" id="switch-turbo">
               <label class="bottom-bar__turbo-btn" for="switch-turbo"></label>
             </div>
             <div class="bottom-bar__auto">
@@ -48,11 +51,11 @@
                   <li> <span>5 SPINS</span></li>
                 </ul>
               </div>
-              <button class="bottom-bar__auto-btn" onclick="">
+              <button class="bottom-bar__auto-btn btn-click" onclick="click_audio()"> 
                 <p>AUTO</p>
               </button>
             </div>
-            <button class="bottom-bar__start" onclick="">
+            <button class="bottom-bar__start btn-click" onclick="click_audio()">
               <div class="bottom-bar__start-icon"></div>
             </button>
           </div>
