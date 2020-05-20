@@ -41,5 +41,37 @@ li {
 
 .bottom-bar {
   padding: 0 5%; }
+  .bottom-bar-container {
+    display: flex;
+    background: url(../img/bottom-bar-body.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 7.5vw; }
+  .bottom-bar__info {
+    background: url(../img/info-normal-bg.png) no-repeat;
+    background-size: contain;
+    min-width: 4.34%;
+    max-width: 4.34%;
+    max-height: 52%;
+    margin-left: 5.3%;
+    margin-top: 2.5%; }
+    .bottom-bar__info-icon {
+      background: url(../img/info-normal-icon.png) no-repeat;
+      background-size: contain;
+      margin: 0 auto;
+      height: 58%;
+      max-width: 20%; }
+    .bottom-bar__info:hover {
+      background: url(../img/info-hover-bg.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__info:active {
+      background: url(../img/info-click-bg.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__info:disabled {
+      background: url(../img/info-disable-bg.png) no-repeat;
+      background-size: contain; }
+    .bottom-bar__info:disabled .bottom-bar__info-icon {
+      background: url(../img/info-disable-icon.png) no-repeat;
+      background-size: contain; }
 
 /*# sourceMappingURL=main.css.map */
